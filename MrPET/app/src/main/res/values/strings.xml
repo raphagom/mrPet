@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MrPET - Saúde Animal</string>
+
+    <string name="gerenciador_pet"> Gerenciador de Pet</string>
+    <string name="gerenciador_dieta"> Gerenciador de Dieta</string>
+    <string name="usuario"> Usuario</string>
+    <string name="configuracoes">Entre em Contato</string>
+    <string name="welcome">MrPet - Saúde Animal</string>
+
+</resources>

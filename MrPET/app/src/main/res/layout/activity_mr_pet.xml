@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrpet.mrpet.MrPET"
+    android:background="#e0e0e0"
+    >
+
+    <Button
+        android:id="@+id/btnGerenciadorPet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="exibirGerenciadorPets"
+        android:drawableLeft="@drawable/dog"
+        android:text="@string/gerenciador_pet"
+        android:layout_above="@+id/btnGerenciadorDieta"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/btnGerenciadorDieta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="exibirGerenciadorDieta"
+        android:drawableLeft="@drawable/bone"
+        android:text="@string/gerenciador_dieta"
+        android:layout_above="@+id/btnInfoUsuario"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/btnInfoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btnConfiguracoes"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/users"
+        android:onClick="exibirInfoUsuario"
+        android:text="@string/usuario" />
+
+    <Button
+        android:id="@+id/btnConfiguracoes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/settings"
+        android:onClick="exibirEntreContato"
+        android:text="@string/configuracoes" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:text="Bem Vindo, Caio!"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

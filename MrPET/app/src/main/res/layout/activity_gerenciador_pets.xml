@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrpet.mrpet.GerenciadorPets"
+    android:background="#e0e0e0">
+
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvTitulo"
+
+         />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvNome"
+         />
+
+    <TextView
+        android:id="@+id/tvRaca"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Raça"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etNome" />
+
+    <EditText
+        android:id="@+id/etRaca"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvRaca"
+ />
+
+    <TextView
+        android:id="@+id/tvPorte"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Porte"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etRaca"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/etPorte"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvPorte"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvPedrigree"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Pedigree"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etPorte"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/etPedigree"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvPedrigree"
+        />
+
+    <TextView
+        android:id="@+id/tvEspecie"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPedigree"
+        android:text="Especie"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+       />
+
+    <EditText
+        android:id="@+id/etEspecie"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvEspecie"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvIdade"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Idade"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etEspecie" />
+
+    <EditText
+        android:id="@+id/etIdade"
+        android:enabled="false"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/tvIdade"
+        />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Gerenciador de PET"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="20sp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/previous"
+        android:onClick="voltar"
+        android:text="Voltar" />
+
+
+</RelativeLayout>
